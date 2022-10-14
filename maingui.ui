@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainGUI</class>
+ <widget class="QMainWindow" name="MainGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1310</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Control And Analyze</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="4" rowspan="3">
+     <widget class="QGraphicsView" name="AGV"/>
+    </item>
+    <item row="0" column="3" rowspan="3">
+     <widget class="QTextBrowser" name="RTB"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="MSL">
+      <property name="text">
+       <string notr="true">Serial Number</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="3">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="18" column="1" colspan="2">
+       <widget class="QComboBox" name="APT">
+        <item>
+         <property name="text">
+          <string notr="true">Center</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">Point</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="17" column="3">
+       <widget class="QPushButton" name="AFS">
+        <property name="text">
+         <string notr="true">Set</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0" colspan="2">
+       <widget class="QSpinBox" name="CFV">
+        <property name="maximum">
+         <number>3000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QPushButton" name="GRFB">
+        <property name="text">
+         <string notr="true">ON</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0" colspan="3">
+       <widget class="QLabel" name="AML">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string notr="true">Analyzer</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="GFL">
+        <property name="text">
+         <string notr="true">Frequncy:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="4">
+       <widget class="QLabel" name="GNL">
+        <property name="text">
+         <string notr="true">None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" colspan="2">
+       <widget class="QLabel" name="CFL">
+        <property name="text">
+         <string notr="true">Frequncy:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="4">
+       <widget class="QLabel" name="CNL">
+        <property name="text">
+         <string notr="true">None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1" colspan="2">
+       <widget class="QDoubleSpinBox" name="AFAV">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="decimals">
+         <number>1</number>
+        </property>
+        <property name="minimum">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>20.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="CCB">
+        <property name="text">
+         <string notr="true">Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QDoubleSpinBox" name="GPV">
+        <property name="decimals">
+         <number>2</number>
+        </property>
+        <property name="minimum">
+         <double>-999.990000000000009</double>
+        </property>
+        <property name="maximum">
+         <double>99.989999999999995</double>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1" colspan="2">
+       <widget class="QDoubleSpinBox" name="AFSV">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>999.999000000000024</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="GFS">
+        <property name="text">
+         <string notr="true">Set</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="3">
+       <widget class="QComboBox" name="AFSVT">
+        <item>
+         <property name="text">
+          <string notr="true">Hz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">kHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">MHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">GHz</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="10" column="3">
+       <widget class="QPushButton" name="CFS">
+        <property name="text">
+         <string notr="true">Set</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="GPS">
+        <property name="text">
+         <string notr="true">Set</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="AFSL">
+        <property name="text">
+         <string notr="true">Span:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLabel" name="GML">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string notr="true">Generator</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QDoubleSpinBox" name="GFV">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>999.999000000000024</double>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="3">
+       <widget class="QPushButton" name="ACB">
+        <property name="text">
+         <string notr="true">Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="GCB">
+        <property name="text">
+         <string notr="true">Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1" colspan="2">
+       <widget class="QPushButton" name="APVL">
+        <property name="text">
+         <string notr="true">Value:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="3">
+       <widget class="QComboBox" name="CChB"/>
+      </item>
+      <item row="19" column="3">
+       <widget class="QComboBox" name="APFVT">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string notr="true">Hz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">kHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">MHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">GHz</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="15" column="1" colspan="2">
+       <widget class="QDoubleSpinBox" name="AFCV">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>999.999000000000024</double>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0" colspan="4">
+       <widget class="QLabel" name="ANL">
+        <property name="text">
+         <string notr="true">None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QLabel" name="APFL">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string notr="true">Frequncy:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="GPL">
+        <property name="text">
+         <string notr="true">Power:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="3">
+       <widget class="QComboBox" name="AFCVT">
+        <item>
+         <property name="text">
+          <string notr="true">Hz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">kHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">MHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">GHz</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="GRFL">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string notr="true">RF output:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="3">
+       <widget class="QLabel" name="APV">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="AFAL">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string notr="true">Ref level:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="AFCL">
+        <property name="text">
+         <string notr="true">Center:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0">
+       <widget class="QLabel" name="ATL">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string notr="true">Trace:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="GPVT">
+        <property name="text">
+         <string notr="true">dbm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1" colspan="2">
+       <widget class="QDoubleSpinBox" name="APFV">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>999.999000000000024</double>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QLabel" name="CFVT">
+        <property name="text">
+         <string notr="true">MHz</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0" colspan="2">
+       <widget class="QLabel" name="AFL">
+        <property name="text">
+         <string notr="true">Frequncy:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="1" colspan="2">
+       <widget class="QComboBox" name="ATT">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string notr="true">Value</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">Average</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">Minimum</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">Maximum</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLabel" name="APL">
+        <property name="text">
+         <string notr="true">Power:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="3">
+       <widget class="QLabel" name="CML">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string notr="true">Controller</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QComboBox" name="GFVT">
+        <item>
+         <property name="text">
+          <string notr="true">Hz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">kHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">MHz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">GHz</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="11" column="2" colspan="2">
+       <widget class="QComboBox" name="CAS"/>
+      </item>
+      <item row="11" column="0" colspan="2">
+       <widget class="QLabel" name="CAL">
+        <property name="text">
+         <string notr="true">Atuneator</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2">
+     <widget class="QSpinBox" name="MSV">
+      <property name="maximum">
+       <number>99999</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QTextBrowser" name="CTB"/>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QPushButton" name="ASB">
+      <property name="text">
+       <string notr="true">Start Analyze</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1310</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionOpenConfig"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveCnf"/>
+    <addaction name="actionSaveFolder"/>
+    <addaction name="actionSaveTXT"/>
+   </widget>
+   <widget class="QMenu" name="menuResult">
+    <property name="title">
+     <string>Result</string>
+    </property>
+    <addaction name="actionClean"/>
+   </widget>
+   <widget class="QMenu" name="menuConfig">
+    <property name="title">
+     <string>Config</string>
+    </property>
+    <addaction name="actionAdd"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionChange_Serial_Number"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuConfig"/>
+   <addaction name="menuResult"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="StatusBar"/>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSaveRes">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSaveTxtRes">
+   <property name="text">
+    <string>Save As Txt</string>
+   </property>
+  </action>
+  <action name="actionClean">
+   <property name="text">
+    <string>Clean</string>
+   </property>
+  </action>
+  <action name="actionSaveCnf">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExport_as_txt">
+   <property name="text">
+    <string>Export as txt</string>
+   </property>
+  </action>
+  <action name="actionSaveFolder">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Save at folder</string>
+   </property>
+  </action>
+  <action name="actionSaveTXT">
+   <property name="text">
+    <string>Save as TXT</string>
+   </property>
+  </action>
+  <action name="actionOpenConfig">
+   <property name="text">
+    <string>Open only Config</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionChange_Serial_Number">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Change Serial Number</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

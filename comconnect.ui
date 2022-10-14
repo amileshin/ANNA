@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>COM</class>
+ <widget class="QWidget" name="COM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="PML">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string notr="true">Port</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="CHB">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>300</width>
+     <height>260</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CHL">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string notr="true">Command history:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CB">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">Connect</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="PBC">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PL">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string notr="true">Port</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BL">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string notr="true">Baud</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="BBC">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string notr="true">1200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">2400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">4800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">9600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">19200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">38400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">115200</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
